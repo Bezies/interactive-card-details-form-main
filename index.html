@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <!-- JS  -->
+  <script src="app.js" defer></script>
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+
+<body>
+  <h1 class="sr-only">Interactive card details form</h1>
+
+  <main>
+
+
+    <div class="background">
+
+      <img src="images/bg-card-front.png" alt="credit card front" id="ccf">
+      <img src="images/bg-card-back.png" alt="credit card back" id="ccb">
+
+      <p id="credit-card-number">0000 0000 0000 0000</p>
+      <p id="credit-card-name">Jane Appleseed</p>
+      <p id="credit-card-month">00</p><span id="slash">/</span>
+      <p id="credit-card-year">00</p>
+      <p id="credit-card-cvc">000</p>
+
+    </div>
+    
+  
+
+    <form action="" class="form">
+
+      <div class="enter-name">
+        <label for="name">CARHOLDER NAME</label>
+        <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+        <small id="error-name"></small>
+      </div>
+
+      <div class="enter-number">
+        <label for="number">CARD NUMBER</label>
+        <input type="text" id="cardNumber" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+        <small id="error-number"></small>
+
+
+      </div>
+      
+      <!-- DATE CVC - CSS GRID  -->
+
+      <div class="date-cvc-grid">
+        <label for="date" id="label-date">EXP. DATE (MM/YY)</label>
+        <label for=""></label>
+        <label for="CVC" id="label-cvc">CVC</label>
+
+        <input type="text" id="month" placeholder="MM" maxlength="2">
+        <input type="text" id="year" placeholder="YY" maxlength="2">
+        <input type="text" id="CVC" placeholder="e.g. 123" maxlength="3" >
+
+        <small id="error-month"></small>
+        <small id="error-year"></small>
+        <small id="error-cvc"></small>
+
+
+
+
+
+      </div>
+
+
+      <input type="button" value="Confirm" id="confirm">
+    </form>
+
+
+
+
+
+    <!-- Completed state start -->
+    <div class="completed-off">
+
+      <h2>Thank you!</h2>
+      <p>We've added your card details</p>
+      <button id="continue">Continue</button>
+
+    </div>
+
+
+
+
+  </main>
+
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/bezies" target="_blank">Quentin Bessiere</a>.
+  </div>
+</footer>
+</body>
+
+</html>
